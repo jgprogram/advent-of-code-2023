@@ -31,7 +31,7 @@ fun main() {
     part2(input).println()
 }
 
-fun parseCard(input: List<String>): List<Card> =
+private fun parseCard(input: List<String>): List<Card> =
     input.map { line ->
         val (idPart, allNumbersPart) = line.split(":")
         val id = idPart.split(" ").last()
